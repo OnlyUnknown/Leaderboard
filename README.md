@@ -82,7 +82,7 @@ The ability to add your score the leaderbord
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[WE will be adding apis]**
+- [ ] **[WE will be add APIS]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
