@@ -1,6 +1,6 @@
 import './style.css';
 
-function components() {
+function component() {
   const element = document.createElement('div');
 
   // Lodash, currently included via a script, is required for this line to work
@@ -9,4 +9,4 @@ function components() {
   return element;
 }
 
-document.body.appendChild(components());
+document.body.appendChild(component());
