@@ -46,6 +46,7 @@
 }
 
 .submit input {
+  margin-bottom: 20px;
   width: 300px;
   height: 25px;
   border: black solid 2px;
@@ -61,5 +62,5 @@
 }
 
 h1, h3{
-  text-shadow: 1px 1px 2px wheat, 0 0 1em wheat, 0 0 0.2em wheat;;
+  text-shadow: 1px 1px 2px wheat, 0 0 1em wheat, 0 0 0.2em wheat;
 }
