@@ -27,8 +27,11 @@ submitForm.addEventListener("submit", (e) => {
   e.preventDefault()
 })
 
+let refresh = document.querySelector(".re-button")
 
+refresh.addEventListener("click", get)
 
+get()
 
 
 // submitBut.addEventListener("click", submit(nameVal, scoreVal))
@@ -46,4 +49,3 @@ submitForm.addEventListener("submit", (e) => {
      
     // })
 
-  get()

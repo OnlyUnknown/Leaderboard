@@ -22,14 +22,18 @@ const submit = async (user, score) => {
       
   const get = async () => {
     const res = await fetch(url);
-
+    let  output = ""
     const data = await res.json();
     data.result.forEach(user => {
-
+      
       const newname = `<li>${user.user}:${user.score}</li>`
-      const list = document.querySelector("ul")
-      list.innerHTML += newname
+      
+      output += newname
 
-    });
+    }
+
+    );
+    let list = document.querySelector("ul")
+    list.innerHTML = output
   }
 export {submit, get}
