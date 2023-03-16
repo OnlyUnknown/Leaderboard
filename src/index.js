@@ -39,7 +39,6 @@ let submitForm = document.querySelector(".submit")
 submitForm.addEventListener("submit", (e) => {
   let scoreVal = document.querySelector(".score").value
   let nameVal = document.querySelector(".name").value
-
   submit(nameVal, scoreVal)
   console.log("worked")
   e.preventDefault()
@@ -53,25 +52,28 @@ submitForm.addEventListener("submit", (e) => {
 // submit("asdf", 232)
 
 
-    fetch(url)
-    .then(res => {
-      return res.json()
-    })
-    .then(data => {
+    // fetch(url)
+    // .then(res => {
+    //   return res.json()
+    // })
+    // .then(data => {
 
-      console.log(data)
-      data.result.forEach(user => {
-
-        const newname = `<li>${user.user}:${user.score}</li>`
-        const list = document.querySelector("ul")
-        list.innerHTML += newname
-
-      });
+    //   console.log(data)
+      
      
-    })
+    // })
     
-  // const get = async () => {
-  //   const res = await fetch(url);
+  const get = async () => {
+    const res = await fetch(url);
 
-  //   const data =
-  // }
+    const data = await res.json();
+    data.result.forEach(user => {
+
+      const newname = `<li>${user.user}:${user.score}</li>`
+      const list = document.querySelector("ul")
+      list.innerHTML += newname
+
+    });
+  }
+
+  get()
