@@ -65,7 +65,10 @@ The ability to add your score the leaderbord
 
 > Clone this repository to your desired folder:
 
-- git clone https://github.com/LoviMadaan/Awesome-books.git
+- git clone https://github.com/OnlyUnknown/Leaderboard.git
+- cd Leaderboard
+- npm install
+- npm start
 
 <!-- AUTHORS -->
 
