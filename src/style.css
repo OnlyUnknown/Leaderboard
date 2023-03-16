@@ -5,6 +5,9 @@
 
 .re-button {
   margin-left: 100px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  border: 3px solid black;
+  background: wheat;
 }
 
 .board {
@@ -12,20 +15,24 @@
   flex-direction: column;
   list-style: none;
   border: black solid 1px;
+  
 }
 
 .board li {
   border-right: 2px solid black;
   border-left: 2px solid black;
   width: 300px;
+  
 }
 
 .board li:first-child {
+  
   border-top: 2px solid black;
 }
 
 .board li:last-child {
   border-bottom: 2px solid black;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 .board li:nth-child(odd) {
@@ -42,9 +49,17 @@
   width: 300px;
   height: 25px;
   border: black solid 2px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 .submit-but {
   width: 60px;
   margin-left: auto;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  border: 3px solid black;
+  background: wheat;
+}
+
+h1, h3{
+  text-shadow: 1px 1px 2px wheat, 0 0 1em wheat, 0 0 0.2em wheat;;
 }
