@@ -1,4 +1,4 @@
-let url = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/c18mtm405VaHSCO6kXTh/scores"
+let url = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FzDHyBPZ9YK2Z6BW2gdj/scores"
 
 
 const submit = async (user, score) => { 
@@ -8,7 +8,7 @@ const submit = async (user, score) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      user,score
+      user, score
     })
   })
   
