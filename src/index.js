@@ -4,8 +4,8 @@ import { submit, get } from './modules/getAndAdd.js';
 const submitForm = document.querySelector('.submit');
 
 submitForm.addEventListener('submit', (e) => {
-  let scoreVal = document.querySelector('.score');
-  let nameVal = document.querySelector('.name');
+  const scoreVal = document.querySelector('.score');
+  const nameVal = document.querySelector('.name');
   submit(nameVal.value, scoreVal.value);
   nameVal.value = '';
   scoreVal.value = '';
